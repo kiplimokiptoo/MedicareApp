@@ -1,14 +1,54 @@
 import React, { useState, useEffect } from 'react'
 
 const departments = [
-  { id: 'cardiology', name: 'Cardiology', desc: 'Heart and vascular diseases, advanced interventions.' },
-  { id: 'neurology', name: 'Neurology', desc: "Stroke, epilepsy, migraine, and Parkinson's care." },
-  { id: 'orthopedics', name: 'Orthopedics', desc: 'Joint replacement, sports injuries, and spine surgery.' },
-  { id: 'pediatrics', name: 'Pediatrics', desc: 'Child health, vaccinations, and developmental care.' },
-  { id: 'dermatology', name: 'Dermatology', desc: 'Skin disorders, laser treatments, and acne care.' },
-  { id: 'gynecology', name: 'Gynecology', desc: "Women's health, maternity, and fertility services." },
-  { id: 'dentist', name: 'Dentist', desc: 'Dental implants, braces, root canals, and oral hygiene.' },
-  { id: 'eye', name: 'Eye Center', desc: 'Cataract surgery, LASIK, glaucoma treatment, and vision therapy.', img: 'https://source.unsplash.com/1400x900/?eye,clinic,ophthalmology' }
+  {
+    id: 'cardiology',
+    name: 'Cardiology',
+    desc: 'Heart and vascular diseases, advanced interventions.',
+    img: 'https://source.unsplash.com/800x600/?cardiologist,doctor,heart'
+  },
+  {
+    id: 'neurology',
+    name: 'Neurology',
+    desc: "Stroke, epilepsy, migraine, and Parkinson's care.",
+    img: 'https://source.unsplash.com/800x600/?neurologist,doctor,brain'
+  },
+  {
+    id: 'orthopedics',
+    name: 'Orthopedics',
+    desc: 'Joint replacement, sports injuries, and spine surgery.',
+    img: 'https://source.unsplash.com/800x600/?orthopedic,surgeon,doctor'
+  },
+  {
+    id: 'pediatrics',
+    name: 'Pediatrics',
+    desc: 'Child health, vaccinations, and developmental care.',
+    img: 'https://source.unsplash.com/800x600/?pediatrician,doctor,child'
+  },
+  {
+    id: 'dermatology',
+    name: 'Dermatology',
+    desc: 'Skin disorders, laser treatments, and acne care.',
+    img: 'https://source.unsplash.com/800x600/?dermatologist,doctor,skin'
+  },
+  {
+    id: 'gynecology',
+    name: 'Gynecology',
+    desc: "Women's health, maternity, and fertility services.",
+    img: 'https://source.unsplash.com/800x600/?gynecologist,doctor,maternity'
+  },
+  {
+    id: 'dentist',
+    name: 'Dentist',
+    desc: 'Dental implants, braces, root canals, and oral hygiene.',
+    img: 'https://source.unsplash.com/800x600/?dentist,doctor,teeth'
+  },
+  {
+    id: 'eye',
+    name: 'Eye Center',
+    desc: 'Cataract surgery, LASIK, glaucoma treatment, and vision therapy.',
+    img: 'https://source.unsplash.com/800x600/?ophthalmologist,doctor,eye'
+  }
 ]
 
 function DeptIcon({ id }){
