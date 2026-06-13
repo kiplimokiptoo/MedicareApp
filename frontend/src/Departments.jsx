@@ -89,7 +89,7 @@ export default function Departments(){
               <h3 className="text-xl font-semibold text-slate-900">{d.name}</h3>
               <p className="mt-2 text-slate-600">{d.desc}</p>
               <div className="mt-4">
-                <button className="inline-flex items-center gap-2 px-3 py-1.5 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">Learn more</button>
+                <button className="inline-flex items-center gap-2 px-3 py-1.5 bg-green-600 text-white rounded-md hover:bg-green-700">Learn more</button>
               </div>
             </div>
           </article>
