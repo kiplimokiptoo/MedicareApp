@@ -5,6 +5,7 @@ import App from './App'
 describe('App shell', () => {
   it('renders Medicare App title', () => {
     render(<App />)
-    expect(screen.getByText(/Medicare App/i)).toBeInTheDocument()
+     const h1 = screen.getAllByRole('heading', { level: 1 })[0]
+     expect(h1).toHaveTextContent(/Medicare App/i)
   })
 })
