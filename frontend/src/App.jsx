@@ -4,16 +4,6 @@ import { Calendar, Phone, Mail, MapPin, Users, Bed, Activity } from 'lucide-reac
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-slate-800">
-      {/* Top */}
-      <div className="bg-primary text-white py-2">
-        <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
-          <div className="flex gap-4 items-center">
-            <Phone size={14} /> <span>+1 (888) 123-4567</span>
-            <Mail size={14} /> <span>contact@medicareapp.com</span>
-          </div>
-          <div className="mt-2 sm:mt-0">123 Health Ave, NYC</div>
-        </div>
-      </div>
 
       {/* Nav */}
       <header className="shadow-sm bg-white sticky top-0 z-40">
@@ -28,9 +18,6 @@ export default function App() {
             <a className="hover:text-primary" href="#">Home</a>
             <a className="hover:text-primary" href="#departments">Departments</a>
             <a className="hover:text-primary" href="#appointment">Appointment</a>
-            <button className="bg-primary text-white px-4 py-2 rounded-full flex items-center gap-2">
-              <Calendar size={16}/> Book
-            </button>
           </nav>
 
           {/* Mobile nav toggle */}
@@ -51,7 +38,11 @@ export default function App() {
               </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80" alt="doctor" className="rounded-xl shadow-lg w-full object-cover h-56 md:h-80"/>
+              <picture>
+                <source media="(min-width:1024px)" srcSet="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80" />
+                <source media="(min-width:640px)" srcSet="https://images.unsplash.com/photo-1586773860416-2d0f5f0b4b3b?auto=format&fit=crop&w=1200&q=80" />
+                <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80" alt="medical team" className="rounded-xl shadow-lg w-full object-cover h-56 md:h-80 lg:h-96"/>
+              </picture>
             </div>
           </div>
         </section>
@@ -112,9 +103,6 @@ function MobileNav(){
           <a className="block px-4 py-2 hover:bg-slate-50" href="#">Home</a>
           <a className="block px-4 py-2 hover:bg-slate-50" href="#departments">Departments</a>
           <a className="block px-4 py-2 hover:bg-slate-50" href="#appointment">Appointment</a>
-          <div className="px-4 pt-2">
-            <button className="w-full bg-primary text-white px-4 py-2 rounded-full">Book</button>
-          </div>
         </div>
       )}
     </div>
