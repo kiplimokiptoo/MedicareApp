@@ -39,9 +39,9 @@ export default function App() {
             </div>
             <div>
               <picture>
-                <source media="(min-width:1024px)" srcSet="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1600&q=80" />
-                <source media="(min-width:640px)" srcSet="https://images.unsplash.com/photo-1586773860416-2d0f5f0b4b3b?auto=format&fit=crop&w=1200&q=80" />
-                <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1200&q=80" alt="medical team" className="rounded-xl shadow-lg w-full object-cover h-56 md:h-80 lg:h-96"/>
+                <source media="(min-width:1024px)" srcSet="https://pin.it/6ht2Ikc4K" />
+                <source media="(min-width:640px)" srcSet="https://pin.it/6ht2Ikc4K" />
+                <img src="https://pin.it/6ht2Ikc4K" alt="medical team" className="rounded-xl shadow-lg w-full object-cover h-56 md:h-80 lg:h-96"/>
               </picture>
             </div>
           </div>
