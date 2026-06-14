@@ -99,9 +99,9 @@ function AppFooter() {
         </div>
         <div>
           <h5 className="font-semibold">Contact</h5>
-          <p className="text-sm">123 Health Ave, Suite 100</p>
-          <p className="text-sm">+1 (888) 123-4567</p>
-          <p className="text-sm">contact@medicareapp.com</p>
+          <p className="text-sm">Kilimani Road, Nairobi</p>
+          <p className="text-sm">+254 700 123 456</p>
+          <p className="text-sm">info@medicareapp.co.ke</p>
         </div>
         <div>
           <h5 className="font-semibold">Hours</h5>
