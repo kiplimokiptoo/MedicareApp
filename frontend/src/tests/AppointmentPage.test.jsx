@@ -1,5 +1,6 @@
+import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import AppointmentPage from "../pages/AppointmentPage";
+import AppointmentPage from "../components/AppointmentPage";
 
 describe("AppointmentPage", () => {
   it("renders form and submits", async () => {
@@ -16,8 +17,7 @@ describe("AppointmentPage", () => {
     fireEvent.change(time, { target: { value: "10:00" } });
     fireEvent.click(submit);
 
-    expect(
-      await screen.findByText(/Appointment requested/i),
-    ).toBeInTheDocument();
+    const confirmation = await screen.findByText(/Appointment requested/i)
+    expect(confirmation).toBeTruthy()
   });
 });

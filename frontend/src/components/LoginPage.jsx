@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function LoginPage({ onLogin, onSwitchToSignup }) {
   const [email, setEmail] = useState('');
@@ -16,10 +16,16 @@ export default function LoginPage({ onLogin, onSwitchToSignup }) {
     }
 
     setSubmitted(true);
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    const loginError = await onLogin?.(email, password);
     setSubmitted(false);
+
+    if (loginError) {
+      setError(loginError);
+      return;
+    }
+
     setError('');
-    onLogin?.(email);
   };
 
   return (

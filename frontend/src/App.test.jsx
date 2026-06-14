@@ -3,9 +3,9 @@ import { render, screen } from '@testing-library/react'
 import App from './App'
 
 describe('App shell', () => {
-  it('renders Medicare App title', () => {
+  it('renders the login screen for unauthenticated users', () => {
     render(<App />)
-    const h1 = screen.getAllByRole('heading', { level: 1 })[0]
-    expect(h1.textContent).toMatch(/Medicare App/i)
+    const heading = screen.getByRole('heading', { level: 1 })
+    expect(heading.textContent).toMatch(/Welcome back\./i)
   })
 })

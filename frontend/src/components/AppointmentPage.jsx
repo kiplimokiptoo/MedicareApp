@@ -38,10 +38,11 @@ export default function AppointmentPage() {
             className="grid grid-cols-1 md:grid-cols-2 gap-4"
           >
             <div className="col-span-1 md:col-span-2">
-              <label className="block text-sm font-medium mb-1">
+              <label htmlFor="patient-name" className="block text-sm font-medium mb-1">
                 Patient Name
               </label>
               <input
+                id="patient-name"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
@@ -51,8 +52,9 @@ export default function AppointmentPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Email</label>
+              <label htmlFor="patient-email" className="block text-sm font-medium mb-1">Email</label>
               <input
+                id="patient-email"
                 name="email"
                 type="email"
                 value={form.email}
@@ -63,8 +65,9 @@ export default function AppointmentPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Phone</label>
+              <label htmlFor="patient-phone" className="block text-sm font-medium mb-1">Phone</label>
               <input
+                id="patient-phone"
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
@@ -73,8 +76,9 @@ export default function AppointmentPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Date</label>
+              <label htmlFor="appointment-date" className="block text-sm font-medium mb-1">Date</label>
               <input
+                id="appointment-date"
                 name="date"
                 type="date"
                 value={form.date}
@@ -85,8 +89,9 @@ export default function AppointmentPage() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Time</label>
+              <label htmlFor="appointment-time" className="block text-sm font-medium mb-1">Time</label>
               <input
+                id="appointment-time"
                 name="time"
                 type="time"
                 value={form.time}
@@ -97,8 +102,9 @@ export default function AppointmentPage() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-medium mb-1">Doctor</label>
+              <label htmlFor="doctor-select" className="block text-sm font-medium mb-1">Doctor</label>
               <select
+                id="doctor-select"
                 name="doctor"
                 value={form.doctor}
                 onChange={handleChange}
