@@ -4,6 +4,7 @@ import SignupPage from './components/SignupPage';
 import Home from './components/Home';
 import AppointmentPage from './components/AppointmentPage';
 import Departments from './Departments';
+import Logo from './assets/logo.svg';
 
 const navItems = [
   { key: 'home', label: 'Home' },
@@ -18,7 +19,9 @@ function HeaderNav({ activePage, onNavigate, onLogout, userName }) {
     <header className="bg-white shadow-sm sticky top-0 z-40">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold">M</div>
+          <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent font-bold">
+            <img src={Logo} alt="Medicare App logo" className="w-7 h-7" />
+          </div>
           <div>
             <h1 className="text-2xl font-bold">Medicare App</h1>
             <p className="text-sm text-slate-500">Welcome back, {userName || 'Member'}.</p>
